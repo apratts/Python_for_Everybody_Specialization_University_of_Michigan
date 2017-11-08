@@ -47,4 +47,149 @@ for i in range (5):
 print('All Done')
 
 #Git commands
-#git clone [url],git add ., git commit -"[comments]",  git push 
+#git clone [url],git add ., git commit -"[comments]",  git push
+
+x = 42
+if x > 1:
+    print('More than one')
+    if x < 100:
+        print('Less than 100')
+print('All done')
+
+x = 4
+if x > 2:
+    print('Bigger')
+else:
+    print('smaller')
+print('All done')
+
+#3.2 More Conditional Statements
+#Multi-way if
+x=0
+if x < 2:
+    print('small')
+elif x < 10:
+    print('Medium')
+else:
+    print('LARGE')
+print('All done')
+
+x=5
+if x < 2:
+    print('small')
+elif x < 10:
+    print('Medium')
+else:
+    print('LARGE')
+print('All done')
+
+x=20
+if x < 2:
+    print('small')
+elif x < 10:
+    print('Medium')
+else:
+    print('LARGE')
+print('All done')
+
+#no else
+x=5
+if x < 2:
+    print('small')
+elif x < 10:
+    print('Medium')
+
+print('All done')
+
+x=50
+if x < 2:
+    print('small')
+elif x < 10:
+    print('Medium')
+
+print('All done')
+
+#elifs
+x = 15
+if x < 2:
+    print('Small')
+elif x < 10:
+    print('Medium')
+elif x < 20:
+    print('Big')
+elif x < 40:
+    print('Large')
+elif x < 100:
+    print('Huge')
+else:
+    print('Ginormous')
+
+#Multi-way Puzzles
+x=27
+
+if x < 2:
+    print('Below 2')
+elif x >=2:
+    print('Two or more')
+else:
+    print('Something else')
+
+X=29
+
+if x < 2:
+    print('Below 2')
+elif x < 20:
+    print('Below 20')
+elif x < 10:
+    print('Below 10')
+else:
+    print('Something else')
+
+#without try / except with traceback
+
+#astr = 'Hello Bob'
+#istr = int(astr) #traceback
+#print('First', istr)
+#astr = '123'
+#istr = int(astr)
+#print('Second', istr)
+
+#try / except without traceback
+
+astr = 'Hello Bob'
+try:
+    istr = int(astr)
+except: #kind of like else in if/then else
+    istr = -1
+
+print('First', istr)
+
+astr = '123'
+try:
+    istr = int(astr)
+except:
+    istr = -1
+
+print('Second', istr)
+
+astr = 'Bob'
+try:
+    print('Hello')
+    istr = int(astr) #traceback
+    print('There')
+except:  #will execute and not go back to try block
+    istr = -1
+
+print('Done', istr)
+
+
+rawstr = input('Enter a number:')
+try:
+    ival = int(rawstr)
+except:
+    ival = -1
+
+if ival > 0:
+    print ('Nice work') #will execute if integer
+else:
+    print('Not a number') #will execute if text
