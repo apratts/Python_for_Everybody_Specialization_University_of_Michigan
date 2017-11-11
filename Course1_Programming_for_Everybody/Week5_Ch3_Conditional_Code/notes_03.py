@@ -193,3 +193,75 @@ if ival > 0:
     print ('Nice work') #will execute if integer
 else:
     print('Not a number') #will execute if text
+
+#book notes
+3.1 Boolean expressions
+True or false
+== operator
+5==5
+5==6
+x!=y # x is not equal to y
+
+3.2 Logical operators
+and, or, not
+
+and
+x > 0 and x < 10
+x is greater than 0 and less than 10
+
+or
+n%2 == 0 or n%3 == 0
+n is divisible by 2 or 3
+
+not
+not (x > y)
+x > y is false, x is less than or equal to y
+
+3.3 Conditional execution
+
+if x > 0:
+    print('x is positive’)
+
+if x < 0:
+    pass
+
+x = 3
+if x < 10:
+    print('Small’)
+
+3.4 Alternative execution
+
+if x%2 == 0:
+    print('x is even’)
+else :
+    print('x is odd’)
+
+3.5 Chained conditionals
+
+if x < y:
+    print('x is less than y’)
+elif x > y:
+     print('x is greater than y’)
+else:
+    print('x and y are equal’)
+
+3.6 Nested conditionals
+
+3.7 Catching exceptions using try and except
+
+inp = input('Enter Fahrenheit Temperature: ‘)
+fahr = float(inp)
+cel = (fahr - 32.0) * 5.0 / 9.0
+print(cel)
+
+inp = input('Enter Fahrenheit Temperature: ‘)
+try:
+fahr = float(inp)
+cel = (fahr - 32.0) * 5.0 / 9.0
+print(cel)
+except:
+print('Please enter a number’)
+
+3.8 Short-circuit evaluation of logical expressions
+
+3.9 Debugging
